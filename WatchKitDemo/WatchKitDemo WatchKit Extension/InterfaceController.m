@@ -10,7 +10,9 @@
 
 #import "Crittercism.h"
 
-@interface InterfaceController()
+@interface InterfaceController() {
+    NSTimer *_updateTimer;
+}
 
 @end
 
@@ -70,11 +72,19 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
+    _updateTimer = [NSTimer scheduledTimerWithTimeInterval:10.f
+                                                    target:self
+                                                  selector:@selector(requestLocationFromPhone)
+                                                  userInfo:nil
+                                                   repeats:TRUE];
 }
 
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
+    
+    [_updateTimer invalidate];
 }
 
 @end
