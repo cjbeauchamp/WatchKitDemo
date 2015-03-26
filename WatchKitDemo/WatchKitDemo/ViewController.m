@@ -6,9 +6,11 @@
 //  Copyright (c) 2015 Crittercism. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
+
 #import "ViewController.h"
 
-#import <CoreLocation/CoreLocation.h> 
+#import "Crittercism.h"
 
 @interface ViewController ()
 
@@ -35,6 +37,9 @@
     
     NSString *title = _tracking ? @"Stop Tracking Location" : @"Start Tracking Location";
     [_trackLocationButton setTitle:title forState:UIControlStateNormal];
+    
+    // leave a breadcrumb to help debug any issues
+    [Crittercism leaveBreadcrumb:[NSString stringWithFormat:@"Tracking set to: %d", _tracking]];
 }
 
 #pragma mark - View Methods
@@ -45,6 +50,9 @@
     // set up our persistent location manager
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
+    
+    // leave a breadcrumb to verify we completed the viewDidLoad
+    [Crittercism leaveBreadcrumb:@"ViewController didLoad"];
 }
 
 #pragma mark - Location Delegates
@@ -52,17 +60,18 @@
 - (void) locationManager:(CLLocationManager *)manager
         didFailWithError:(NSError *)error
 {
+    // print the error to log
     NSLog(@"Error retrieving location: %@", error);
+
+    // Log the error with Crittercism so you can spot it remotely
+    [Crittercism logError:error];
 }
 
 - (void) locationManager:(CLLocationManager*)manager
      didUpdateToLocation:(CLLocation*)newLocation
             fromLocation:(CLLocation*)oldLocation
 {
-    // update our location
-    NSLog(@"New location: %@", newLocation);
-    
-    // update our labels
+    // update our labels with the info from the new location
     _latitudeLabel.text = [NSString stringWithFormat:@"%g", newLocation.coordinate.latitude];
     _longitudeLabel.text = [NSString stringWithFormat:@"%g", newLocation.coordinate.longitude];
     _altitudeLabel.text = [NSString stringWithFormat:@"%g", newLocation.altitude];
@@ -73,7 +82,11 @@
 - (void) locationManager:(CLLocationManager *)manager
 didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
+    // print to console
     NSLog(@"Location authorization status changed: %d", status);
+    
+    // leave a breadcrumb to help debug any issues remotely
+    [Crittercism leaveBreadcrumb:[NSString stringWithFormat:@"Location authorization status changed: %d", status]];
 
     // if we are not authorized, stop tracking (in case we were)
     if(status < kCLAuthorizationStatusAuthorizedAlways) {
