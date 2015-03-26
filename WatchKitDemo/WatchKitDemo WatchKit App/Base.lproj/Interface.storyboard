@@ -13,6 +13,10 @@
                         <map alignment="left" id="obM-yS-DJL"/>
                         <label alignment="left" verticalAlignment="bottom" text="Label" id="V3p-ht-SVn"/>
                     </items>
+                    <connections>
+                        <outlet property="mapView" destination="obM-yS-DJL" id="L9P-eC-7IL"/>
+                        <outlet property="speedLabel" destination="V3p-ht-SVn" id="vVl-1y-AZt"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

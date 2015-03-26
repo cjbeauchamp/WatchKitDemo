@@ -11,4 +11,7 @@
 
 @interface InterfaceController : WKInterfaceController
 
+@property (weak, nonatomic) IBOutlet WKInterfaceMap *mapView;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *speedLabel;
+
 @end
