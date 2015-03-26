@@ -20,5 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *trackLocationButton;
 - (IBAction)toggleLocationTracking:(id)sender;
 
+- (NSDictionary*) getSerializedLocation;
+
 @end
 

@@ -10,9 +10,21 @@
 
 #import "Crittercism.h"
 
+#import "ViewController.h"
+
 @implementation AppDelegate
 
-
+- (void) application:(UIApplication *)application
+handleWatchKitExtensionRequest:(NSDictionary *)userInfo
+               reply:(void (^)(NSDictionary *))reply
+{
+    ViewController *mainController = (ViewController*)  self.window.rootViewController;
+    
+    NSDictionary *serializedLocation = [mainController getSerializedLocation];
+    
+    reply(@{@"location": serializedLocation});
+}
+ 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 

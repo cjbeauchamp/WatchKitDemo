@@ -27,6 +27,23 @@
 
 @implementation ViewController
 
+- (NSDictionary*) getSerializedLocation
+{
+    // get the latest location from our GPS
+    CLLocation *location = _locationManager.location;
+    
+    // extract the coordinate
+    CLLocationCoordinate2D coordinate = location.coordinate;
+    
+    // return a serialized dictionary with the current location attributes
+    return @{
+             @"latitude":   [NSNumber numberWithDouble:coordinate.latitude],
+             @"longitude":  [NSNumber numberWithDouble:coordinate.longitude],
+             @"altitude":   [NSNumber numberWithDouble:location.altitude],
+             @"speed":      [NSNumber numberWithDouble:location.speed]
+             };
+}
+
 #pragma mark - Setters
 
 // we override the setter here to make it easier to align our variable w/

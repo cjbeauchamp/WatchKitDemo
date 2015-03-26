@@ -26,6 +26,8 @@
 		16EEEE981AC43D4D00ED5387 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEE961AC43D4D00ED5387 /* Interface.storyboard */; };
 		16EEEE9A1AC43D4D00ED5387 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEE991AC43D4D00ED5387 /* Images.xcassets */; };
 		16EEEE9D1AC43D4D00ED5387 /* WatchKitDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16EEEE7D1AC43D4D00ED5387 /* WatchKitDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		16EEEEA71AC48E6200ED5387 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */; };
+		16EEEEA81AC48E6B00ED5387 /* libCrittercism_v5_1_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EEEEA71AC48E6200ED5387 /* SystemConfiguration.framework in Frameworks */,
+				16EEEEA81AC48E6B00ED5387 /* libCrittercism_v5_1_3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +676,10 @@
 				);
 				INFOPLIST_FILE = "WatchKitDemo WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatchKitDemo/CrittercismSDK",
+				);
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
@@ -682,6 +690,10 @@
 			buildSettings = {
 				INFOPLIST_FILE = "WatchKitDemo WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatchKitDemo/CrittercismSDK",
+				);
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
