@@ -15,6 +15,9 @@
 		16EEEE001AC38CEA00ED5387 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEDFE1AC38CEA00ED5387 /* LaunchScreen.xib */; };
 		16EEEE0C1AC38CEA00ED5387 /* WatchKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEE0B1AC38CEA00ED5387 /* WatchKitDemoTests.m */; };
 		16EEEE161AC3941100ED5387 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE151AC3941100ED5387 /* MapKit.framework */; };
+		16EEEE4A1AC3A6C300ED5387 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEE481AC3A6C300ED5387 /* dsym_upload.sh */; };
+		16EEEE4B1AC3A6C300ED5387 /* libCrittercism_v5_1_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */; };
+		16EEEE4D1AC3A76500ED5387 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,19 @@
 			remoteInfo = WatchKitDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16EEEE421AC3A44600ED5387 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16EEEDEC1AC38CEA00ED5387 /* WatchKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +58,13 @@
 		16EEEE0A1AC38CEA00ED5387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16EEEE0B1AC38CEA00ED5387 /* WatchKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchKitDemoTests.m; sourceTree = "<group>"; };
 		16EEEE151AC3941100ED5387 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		16EEEE441AC3A6C300ED5387 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
+		16EEEE451AC3A6C300ED5387 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
+		16EEEE461AC3A6C300ED5387 /* CrittercismConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismConfig.h; sourceTree = "<group>"; };
+		16EEEE471AC3A6C300ED5387 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
+		16EEEE481AC3A6C300ED5387 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
+		16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v5_1_3.a; sourceTree = "<group>"; };
+		16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EEEE4D1AC3A76500ED5387 /* SystemConfiguration.framework in Frameworks */,
+				16EEEE4B1AC3A6C300ED5387 /* libCrittercism_v5_1_3.a in Frameworks */,
 				16EEEE161AC3941100ED5387 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +91,7 @@
 		16EEEDE31AC38CE900ED5387 = {
 			isa = PBXGroup;
 			children = (
+				16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */,
 				16EEEE151AC3941100ED5387 /* MapKit.framework */,
 				16EEEDEE1AC38CEA00ED5387 /* WatchKitDemo */,
 				16EEEE081AC38CEA00ED5387 /* WatchKitDemoTests */,
@@ -85,6 +111,7 @@
 		16EEEDEE1AC38CEA00ED5387 /* WatchKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				16EEEE431AC3A6C300ED5387 /* CrittercismSDK */,
 				16EEEDF31AC38CEA00ED5387 /* AppDelegate.h */,
 				16EEEDF41AC38CEA00ED5387 /* AppDelegate.m */,
 				16EEEDF61AC38CEA00ED5387 /* ViewController.h */,
@@ -123,6 +150,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		16EEEE431AC3A6C300ED5387 /* CrittercismSDK */ = {
+			isa = PBXGroup;
+			children = (
+				16EEEE441AC3A6C300ED5387 /* CRFilter.h */,
+				16EEEE451AC3A6C300ED5387 /* Crittercism.h */,
+				16EEEE461AC3A6C300ED5387 /* CrittercismConfig.h */,
+				16EEEE471AC3A6C300ED5387 /* CrittercismDelegate.h */,
+				16EEEE481AC3A6C300ED5387 /* dsym_upload.sh */,
+				16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */,
+			);
+			path = CrittercismSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +173,7 @@
 				16EEEDE81AC38CEA00ED5387 /* Sources */,
 				16EEEDE91AC38CEA00ED5387 /* Frameworks */,
 				16EEEDEA1AC38CEA00ED5387 /* Resources */,
+				16EEEE421AC3A44600ED5387 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -211,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EEEE4A1AC3A6C300ED5387 /* dsym_upload.sh in Resources */,
 				16EEEDFB1AC38CEA00ED5387 /* Main.storyboard in Resources */,
 				16EEEE001AC38CEA00ED5387 /* LaunchScreen.xib in Resources */,
 				16EEEDFD1AC38CEA00ED5387 /* Images.xcassets in Resources */,
@@ -357,6 +399,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatchKitDemo/CrittercismSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -367,6 +413,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WatchKitDemo/CrittercismSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
