@@ -11,15 +11,24 @@
 #import <CoreLocation/CoreLocation.h> 
 
 @interface ViewController ()
+
+// make sure we conform to the location delegate
 <CLLocationManagerDelegate>
 
+// if we are currently tracking location
 @property (nonatomic, assign) BOOL tracking;
+
+// our location manager
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
 @end
 
 @implementation ViewController
 
+#pragma mark - Setters
+
+// we override the setter here to make it easier to align our variable w/
+// our button status
 - (void) setTracking:(BOOL)tracking
 {
     _tracking = tracking;
@@ -28,9 +37,12 @@
     [_trackLocationButton setTitle:title forState:UIControlStateNormal];
 }
 
+#pragma mark - View Methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // set up our persistent location manager
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
 }
@@ -41,9 +53,6 @@
         didFailWithError:(NSError *)error
 {
     NSLog(@"Error retrieving location: %@", error);
-    
-    // and log it
-//    [Crittercism logError:error];
 }
 
 - (void) locationManager:(CLLocationManager*)manager
@@ -66,15 +75,20 @@ didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
     NSLog(@"Location authorization status changed: %d", status);
 
+    // if we are not authorized, stop tracking (in case we were)
     if(status < kCLAuthorizationStatusAuthorizedAlways) {
         self.tracking = FALSE;
         [_locationManager stopUpdatingLocation];
-    } else {
+    }
+    
+    // we are authorized, go ahead and start tracking
+    else {
         self.tracking = TRUE;
         [_locationManager startUpdatingLocation];
     }
 }
 
+# pragma mark - Interface Actions
 
 - (IBAction)toggleLocationTracking:(id)sender {
     
@@ -84,7 +98,10 @@ didChangeAuthorizationStatus:(CLAuthorizationStatus)status
         // we don't, so ask the user for it
         if([_locationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
             [_locationManager requestAlwaysAuthorization];
-        } else {
+        }
+        
+        // (same thing as the if-statement, just geared toward different API versions)
+        else {
             self.tracking = TRUE;
             [_locationManager startUpdatingLocation];
         }

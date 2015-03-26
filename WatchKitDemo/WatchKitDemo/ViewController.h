@@ -10,13 +10,14 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *trackLocationButton;
-
+// Our status labels
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *altitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 
+// The location tracking start/stop button
+@property (weak, nonatomic) IBOutlet UIButton *trackLocationButton;
 - (IBAction)toggleLocationTracking:(id)sender;
 
 @end
