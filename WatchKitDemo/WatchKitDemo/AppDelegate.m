@@ -16,7 +16,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    NSString *critterAppID = @"YOUR_APP_ID_GOES_HERE";
+    NSString *critterAppID = @"YOUR_APP_ID_GOES_HEREE";
     
     NSAssert(![critterAppID isEqualToString:@"YOUR_APP_ID_GOES_HERE"], @"Enter your Crittercism App ID into the app delegate variable critterAppID!");
     
