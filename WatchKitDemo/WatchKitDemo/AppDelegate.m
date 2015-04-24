@@ -28,7 +28,7 @@ handleWatchKitExtensionRequest:(NSDictionary *)userInfo
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    NSString *critterAppID = @"YOUR_APP_ID_GOES_HERE";
+    NSString *critterAppID = @"54187367d478bc786e00000e";
     
     NSAssert(![critterAppID isEqualToString:@"YOUR_APP_ID_GOES_HERE"], @"Enter your Crittercism App ID into the app delegate variable critterAppID!");
     

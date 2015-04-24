@@ -27,9 +27,19 @@
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
                         <group alignment="left" layout="vertical" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <label width="1" alignment="left" text="99.99" textAlignment="center" id="XjC-cn-7Qx">
+                                    <fontDescription key="font" type="boldSystem" pointSize="44"/>
+                                </label>
+                                <label width="1" alignment="left" text="km/hr" textAlignment="center" id="M6Q-05-YYR"/>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="glanceSpeed" destination="XjC-cn-7Qx" id="wJC-qs-adp"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>

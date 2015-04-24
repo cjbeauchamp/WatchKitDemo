@@ -20,7 +20,30 @@
 
 - (void) requestSpeedFromPhone
 {
-
+    [WKInterfaceController openParentApplication:@{@"request":@"location"}
+                                           reply:^(NSDictionary *replyInfo, NSError *error) {
+                                               
+                                               // the request was successful
+                                               if(error == nil) {
+                                                   
+                                                   // get the serialized location object
+                                                   NSDictionary *location = replyInfo[@"location"];
+                                                   
+                                                   // pull out the speed (it's an NSNumber)
+                                                   NSNumber *speed = location[@"speed"];
+                                                   
+                                                   // format it nicely for display
+                                                   NSString *speedString = [NSString stringWithFormat:@"%.2lf", speed.doubleValue];
+                                                   
+                                                   // update our label with the newest location's speed
+                                                   [_glanceSpeed setText:speedString];
+                                               }
+                                               
+                                               // the request failed
+                                               else {
+                                                   [Crittercism logError:error];
+                                               }
+                                           }];
 }
 
 - (void)awakeWithContext:(id)context {

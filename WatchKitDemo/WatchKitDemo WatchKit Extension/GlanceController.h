@@ -11,4 +11,6 @@
 
 @interface GlanceController : WKInterfaceController
 
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *glanceSpeed;
+
 @end
