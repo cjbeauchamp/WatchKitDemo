@@ -19,6 +19,12 @@
 
 @implementation InterfaceController
 
+- (void)handleActionWithIdentifier:(NSString *)identifier
+             forRemoteNotification:(NSDictionary *)remoteNotification
+{
+    NSLog(@"Handling remote notification: %@ with identifier: %@", remoteNotification, identifier);
+}
+
 - (void) requestLocationFromPhone
 {
     [WKInterfaceController openParentApplication:@{@"request":@"location"}
