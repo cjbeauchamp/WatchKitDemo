@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16CFB0B31B4C1D50007C37E4 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 16CFB0B11B4C1D50007C37E4 /* dsym_upload.sh */; };
+		16CFB0B41B4C1D50007C37E4 /* libCrittercism_v5_2_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CFB0B21B4C1D50007C37E4 /* libCrittercism_v5_2_3.a */; };
+		16CFB0B51B4C1D74007C37E4 /* libCrittercism_v5_2_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CFB0B21B4C1D50007C37E4 /* libCrittercism_v5_2_3.a */; };
 		16EEEDF21AC38CEA00ED5387 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEDF11AC38CEA00ED5387 /* main.m */; };
 		16EEEDF51AC38CEA00ED5387 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEDF41AC38CEA00ED5387 /* AppDelegate.m */; };
 		16EEEDF81AC38CEA00ED5387 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEDF71AC38CEA00ED5387 /* ViewController.m */; };
@@ -15,8 +18,6 @@
 		16EEEE001AC38CEA00ED5387 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEDFE1AC38CEA00ED5387 /* LaunchScreen.xib */; };
 		16EEEE0C1AC38CEA00ED5387 /* WatchKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEE0B1AC38CEA00ED5387 /* WatchKitDemoTests.m */; };
 		16EEEE161AC3941100ED5387 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE151AC3941100ED5387 /* MapKit.framework */; };
-		16EEEE4A1AC3A6C300ED5387 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEE481AC3A6C300ED5387 /* dsym_upload.sh */; };
-		16EEEE4B1AC3A6C300ED5387 /* libCrittercism_v5_1_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */; };
 		16EEEE4D1AC3A76500ED5387 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */; };
 		16EEEE841AC43D4D00ED5387 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEE831AC43D4D00ED5387 /* InterfaceController.m */; };
 		16EEEE871AC43D4D00ED5387 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16EEEE861AC43D4D00ED5387 /* NotificationController.m */; };
@@ -27,7 +28,6 @@
 		16EEEE9A1AC43D4D00ED5387 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EEEE991AC43D4D00ED5387 /* Images.xcassets */; };
 		16EEEE9D1AC43D4D00ED5387 /* WatchKitDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 16EEEE7D1AC43D4D00ED5387 /* WatchKitDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		16EEEEA71AC48E6200ED5387 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */; };
-		16EEEEA81AC48E6B00ED5387 /* libCrittercism_v5_1_3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +69,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16CFB0AD1B4C1D50007C37E4 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
+		16CFB0AE1B4C1D50007C37E4 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
+		16CFB0AF1B4C1D50007C37E4 /* CrittercismConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismConfig.h; sourceTree = "<group>"; };
+		16CFB0B01B4C1D50007C37E4 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
+		16CFB0B11B4C1D50007C37E4 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
+		16CFB0B21B4C1D50007C37E4 /* libCrittercism_v5_2_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v5_2_3.a; sourceTree = "<group>"; };
 		16EEEDEC1AC38CEA00ED5387 /* WatchKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EEEDF01AC38CEA00ED5387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16EEEDF11AC38CEA00ED5387 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,12 +89,6 @@
 		16EEEE0A1AC38CEA00ED5387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16EEEE0B1AC38CEA00ED5387 /* WatchKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchKitDemoTests.m; sourceTree = "<group>"; };
 		16EEEE151AC3941100ED5387 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		16EEEE441AC3A6C300ED5387 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
-		16EEEE451AC3A6C300ED5387 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
-		16EEEE461AC3A6C300ED5387 /* CrittercismConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismConfig.h; sourceTree = "<group>"; };
-		16EEEE471AC3A6C300ED5387 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
-		16EEEE481AC3A6C300ED5387 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
-		16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v5_1_3.a; sourceTree = "<group>"; };
 		16EEEE4C1AC3A76500ED5387 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		16EEEE7D1AC43D4D00ED5387 /* WatchKitDemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKitDemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EEEE801AC43D4D00ED5387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EEEE4D1AC3A76500ED5387 /* SystemConfiguration.framework in Frameworks */,
-				16EEEE4B1AC3A6C300ED5387 /* libCrittercism_v5_1_3.a in Frameworks */,
+				16CFB0B41B4C1D50007C37E4 /* libCrittercism_v5_2_3.a in Frameworks */,
 				16EEEE161AC3941100ED5387 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,13 +129,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EEEEA71AC48E6200ED5387 /* SystemConfiguration.framework in Frameworks */,
-				16EEEEA81AC48E6B00ED5387 /* libCrittercism_v5_1_3.a in Frameworks */,
+				16CFB0B51B4C1D74007C37E4 /* libCrittercism_v5_2_3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16CFB0AC1B4C1D50007C37E4 /* CrittercismSDK */ = {
+			isa = PBXGroup;
+			children = (
+				16CFB0AD1B4C1D50007C37E4 /* CRFilter.h */,
+				16CFB0AE1B4C1D50007C37E4 /* Crittercism.h */,
+				16CFB0AF1B4C1D50007C37E4 /* CrittercismConfig.h */,
+				16CFB0B01B4C1D50007C37E4 /* CrittercismDelegate.h */,
+				16CFB0B11B4C1D50007C37E4 /* dsym_upload.sh */,
+				16CFB0B21B4C1D50007C37E4 /* libCrittercism_v5_2_3.a */,
+			);
+			path = CrittercismSDK;
+			sourceTree = "<group>";
+		};
 		16EEEDE31AC38CE900ED5387 = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +174,7 @@
 		16EEEDEE1AC38CEA00ED5387 /* WatchKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				16EEEE431AC3A6C300ED5387 /* CrittercismSDK */,
+				16CFB0AC1B4C1D50007C37E4 /* CrittercismSDK */,
 				16EEEDF31AC38CEA00ED5387 /* AppDelegate.h */,
 				16EEEDF41AC38CEA00ED5387 /* AppDelegate.m */,
 				16EEEDF61AC38CEA00ED5387 /* ViewController.h */,
@@ -200,19 +213,6 @@
 				16EEEE0A1AC38CEA00ED5387 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		16EEEE431AC3A6C300ED5387 /* CrittercismSDK */ = {
-			isa = PBXGroup;
-			children = (
-				16EEEE441AC3A6C300ED5387 /* CRFilter.h */,
-				16EEEE451AC3A6C300ED5387 /* Crittercism.h */,
-				16EEEE461AC3A6C300ED5387 /* CrittercismConfig.h */,
-				16EEEE471AC3A6C300ED5387 /* CrittercismDelegate.h */,
-				16EEEE481AC3A6C300ED5387 /* dsym_upload.sh */,
-				16EEEE491AC3A6C300ED5387 /* libCrittercism_v5_1_3.a */,
-			);
-			path = CrittercismSDK;
 			sourceTree = "<group>";
 		};
 		16EEEE7E1AC43D4D00ED5387 /* WatchKitDemo WatchKit Extension */ = {
@@ -268,6 +268,7 @@
 				16EEEDE91AC38CEA00ED5387 /* Frameworks */,
 				16EEEDEA1AC38CEA00ED5387 /* Resources */,
 				16EEEE421AC3A44600ED5387 /* Embed App Extensions */,
+				16CFB0AB1B4C1CC4007C37E4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -388,7 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16EEEE4A1AC3A6C300ED5387 /* dsym_upload.sh in Resources */,
+				16CFB0B31B4C1D50007C37E4 /* dsym_upload.sh in Resources */,
 				16EEEDFB1AC38CEA00ED5387 /* Main.storyboard in Resources */,
 				16EEEE001AC38CEA00ED5387 /* LaunchScreen.xib in Resources */,
 				16EEEDFD1AC38CEA00ED5387 /* Images.xcassets in Resources */,
@@ -421,6 +422,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16CFB0AB1B4C1CC4007C37E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_ID=\"559be49cdfc1280c0046164c\"\nAPI_KEY=\"uS3YCQH1sTRxsB13cXw4Y37sDsDD2ZP3\"\n\n\n#!/bin/sh\n# Copyright 2013-2015 Crittercism, Inc. All rights reserved.\n#\n# Usage:\n#   * (These instructions assume you have dragged the \"CrittercismSDK\" folder\n#     into your project in XCode)\n#   * In the project editor, select your target.\n#   * Click \"Build Phases\" at the top of the project editor.\n#   * Click \"Add Build Phase\" in the lower right corner.\n#   * Choose \"Add Run Script.\"\n#   * Paste the following script into the dark text box. You will have to\n#     uncomment the lines (remove the #s) of course.\n#\n# --- SCRIPT BEGINS ON NEXT LINE, COPY AND EDIT FROM THERE ---\n# APP_ID=\"<YOUR_APP_ID>\"\n# API_KEY=\"<YOUR_API_KEY>\"\n# source ${SRCROOT}/CrittercismSDK/dsym_upload.sh\n# --- END OF SCRIPT ---\n\n################################################################################\n# Advanced Settings\n#\n# You can over-ride these directly in XCode in your Run Script Build Phase, or\n# change the defaults below.\n\n# Should simulator builds cause symbols to be uploaded?\nUPLOAD_SIMULATOR_SYMBOLS=${UPLOAD_SIMULATOR_SYMBOLS:=1}\n\n# This setting determines whether or not your build will fail if the dSYM was\n# not uploaded properly to Crittercism's servers.\n#\n# You may wish to change this setting if you are building without internet\n# access, or otherwise are having difficulty connecting to Crittercism's\n# servers.\nREQUIRE_UPLOAD_SUCCESS=${REQUIRE_UPLOAD_SUCCESS:=1}\n\n################################################################################\n# You should not need to edit anything past this point.\n\nexitWithMessageAndCode() {\n    echo \"${1}\"\n    exit ${2}\n}\n\necho \"Uploading dSYM to Crittercism.\"\necho \"\"\n\n# Display build info\nBUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' ${INFOPLIST_FILE})\nBUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' ${INFOPLIST_FILE})\n\necho \"Product Name: ${PRODUCT_NAME}\"\necho \"Version: ${BUNDLE_SHORT_VERSION}\"\necho \"Build: ${BUNDLE_VERSION}\"\necho \"Crittercism App ID: ${APP_ID}\"\necho \"Crittercism API key: ${API_KEY}\"\n\n# Possibly bail if this is a simulator build\nif [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\nif [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\nexitWithMessageAndCode \"skipping simulator build\" 0\nfi\nfi\n\n# Check to make sure the necessary parameters are defined\nif [ ! \"${APP_ID}\" ]; then\nexitWithMessageAndCode \"err: Crittercism App ID not defined.\" 1\nfi\n\nif [ ! \"${API_KEY}\" ]; then\nexitWithMessageAndCode \"err: Crittercism API Key not defined.\" 1\nfi\n\n# Compute DSYM_UPLOAD_DOMAIN and DSYM_UPLOAD_URL based on APP_ID .\nAPP_ID_LENGTH=${#APP_ID}\n    if [ $APP_ID_LENGTH -eq 24 ]; then\n    DSYM_UPLOAD_DOMAIN=\"api.crittercism.com\"\n    elif [ $APP_ID_LENGTH -eq 40 ]; then\n    APP_ID_LOCATION=${APP_ID:32}\n    US_WEST_1_PROD_DESIGNATOR=\"00555300\"\n    EU_CENTRAL_1_PROD_DESIGNATOR=\"00444503\"\n    if [ \"${APP_ID_LOCATION}\" == \"${US_WEST_1_PROD_DESIGNATOR}\" ]; then\n    DSYM_UPLOAD_DOMAIN=\"api.crittercism.com\"\n    elif [ \"${APP_ID_LOCATION}\" == \"${EU_CENTRAL_1_PROD_DESIGNATOR}\" ]; then\n    DSYM_UPLOAD_DOMAIN=\"api.eu.crittercism.com\"\n    else\n    echo \"Unexpected APP_ID_LOCATION == ${APP_ID_LOCATION}\"\n    fi\n    else\n    echo \"Unexpected APP_ID_LENGTH == ${APP_ID_LENGTH}\"\n    fi\n    if [ ! \"${DSYM_UPLOAD_DOMAIN}\" ]; then\n    # DSYM_UPLOAD_DOMAIN didn't get defined.\n    exitWithMessageAndCode \"err: Invalid Crittercism App ID: ${APP_ID}\" 1\n    fi\n    echo \"dSym Upload Domain: ${DSYM_UPLOAD_DOMAIN}\"\n    DSYM_UPLOAD_URL=\"https://${DSYM_UPLOAD_DOMAIN}/api_beta/dsym/${APP_ID}\"\n    echo \"dSym Upload URL: ${DSYM_UPLOAD_URL}\"\n    \n    # create dSYM .zip file\n    DSYM_SRC=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\n    DSYM_ZIP_FPATH=\"${TARGET_TEMP_DIR}/$DWARF_DSYM_FILE_NAME.zip\"\n    echo \"dSYM Source: ${DSYM_SRC}\"\n    if [ ! -d \"$DSYM_SRC\" ]; then\n    exitWithMessageAndCode \"dSYM source not found: ${DSYM_SRC}\" 1\n    fi\n    \n    echo \"Compressing dSYM to ${DSYM_ZIP_FPATH} .\"\n    (/usr/bin/zip --recurse-paths --quiet \"${DSYM_ZIP_FPATH}\" \"${DSYM_SRC}\") || exitWithMessageAndCode \"err: Failed creating zip.\" 1\n    echo \"\"\n    echo \"dSym.zip archive created.\"\n    \n    # Upload dSYM to Crittercism\n    echo \"Uploading dSYM.zip to Crittercism: ${DSYM_UPLOAD_URL}\"\n    \n    STATUS=$(/usr/bin/curl \"${DSYM_UPLOAD_URL}\" --write-out %{http_code} --silent --output /dev/null -F dsym=@\"${DSYM_ZIP_FPATH}\" -F key=\"${API_KEY}\")\n    \n    echo Crittercism API server response: ${STATUS}\n    if [ $STATUS -ne 200 ]; then\n    echo \"err: dSYM.zip archive failed to upload to Crittercism.\"\n    if [ $REQUIRE_UPLOAD_SUCCESS -eq 1 ]; then\n    echo \"To ignore this server response and build succesfully add\"\n    echo \"REQUIRE_UPLOAD_SUCCESS=0\"\n    echo \"to the Run Script Build Phase invoking the dsym_upload.sh script.\"\n    exit 1\n    else\n    echo \"Ignoring due to REQUIRE_UPLOAD_SUCCESS=0 .\"\n    fi\n    fi\n    \n    # Remove temp dSYM archive\n    echo \"Removing temporary dSYM.zip archive.\"\n    /bin/rm -f \"${DSYM_ZIP_FPATH}\"\n    if [ \"$?\" -ne 0 ]; then\n    exitWithMessageAndCode \"Error removing temporary dSYM.zip archive.\" 1\n    fi\n    \n    echo \"Crittercism dSYM upload complete.\"\n    \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16EEEDE81AC38CEA00ED5387 /* Sources */ = {
@@ -718,6 +735,7 @@
 				16EEEE111AC38CEA00ED5387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16EEEE121AC38CEA00ED5387 /* Build configuration list for PBXNativeTarget "WatchKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +744,7 @@
 				16EEEE141AC38CEA00ED5387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16EEEE9E1AC43D4D00ED5387 /* Build configuration list for PBXNativeTarget "WatchKitDemo WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -734,6 +753,7 @@
 				16EEEEA01AC43D4D00ED5387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16EEEEA11AC43D4D00ED5387 /* Build configuration list for PBXNativeTarget "WatchKitDemo WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -742,6 +762,7 @@
 				16EEEEA31AC43D4D00ED5387 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
