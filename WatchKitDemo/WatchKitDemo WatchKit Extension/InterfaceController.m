@@ -19,6 +19,7 @@
 
 @implementation InterfaceController
 
+
 - (void)handleActionWithIdentifier:(NSString *)identifier
              forRemoteNotification:(NSDictionary *)remoteNotification
 {
@@ -63,6 +64,7 @@
                                                
                                                // the request failed
                                                else {
+                                                   NSLog(@"Request failed: %@", error);
                                                    [Crittercism logError:error];
                                                }
                                            }];
@@ -70,7 +72,13 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-
+    
+    NSString *critterAppID = @"YOUR_APP_ID_GOES_HERE";
+    
+    NSAssert(![critterAppID isEqualToString:@"YOUR_APP_ID_GOES_HERE"], @"Enter your Crittercism App ID into the app delegate variable critterAppID!");
+    
+    [Crittercism enableWithAppID:critterAppID];
+    
     // Configure interface objects here.
     [self requestLocationFromPhone];
 }
@@ -91,6 +99,16 @@
     [super didDeactivate];
     
     [_updateTimer invalidate];
+}
+
+- (IBAction)signalCrash
+{
+
+    NSException *myException = [NSException exceptionWithName:@"WatchkitException"
+                                                       reason:@"You put in a button that crashes the app. Duh."
+                                                     userInfo:nil];
+    @throw myException;
+    
 }
 
 @end

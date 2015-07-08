@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceMap *mapView;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *speedLabel;
 
+- (IBAction)signalCrash;
+
 @end
